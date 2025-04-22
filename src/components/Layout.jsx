@@ -1,6 +1,6 @@
 import Logo from '../assets/logo.svg';
 import WhiteLogo from '../assets/white-logo.svg';
-import '../styles/layout.css';
+import '../styles/layout.scss';
 
 function Header() {
     return (

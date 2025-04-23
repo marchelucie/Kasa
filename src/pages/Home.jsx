@@ -1,14 +1,24 @@
+import Banner from "../components/Banner";
 import Layout from "../components/Layout";
-import Banner from "../assets/banner.png";
+import AccomodationCard from "../components/AccomodationCard";
+import data from "../data/logements.json";
+
 import '../styles/Home.scss';
 
 function Home() {
     return (
         <>
             <Layout>
-                <div className="banner">
-                    <img src={Banner} alt="Bannière de la page d'accueil" className="banner__image" />
-                    <h2>Chez vous, partout et ailleurs</h2>
+                <Banner />
+                <div className="cards-container">
+                    {data.map((logement) => (
+                        <AccomodationCard
+                            key={logement.id}
+                            id={logement.id}
+                            title={logement.title}
+                            cover={logement.cover}
+                        />
+                    ))}
                 </div>
             </Layout>
         </>

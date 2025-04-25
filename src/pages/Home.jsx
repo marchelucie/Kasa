@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import BannerImage from "../assets/banner.png";
 import AccomodationCard from "../components/AccomodationCard";
 import data from "../data/logements.json";
 
@@ -7,7 +8,7 @@ import '../styles/Home.scss';
 function Home() {
     return (
         <>
-            <Banner />
+            <Banner title={"Chez vous, partout et ailleurs"} bannerImage={BannerImage}/>
             <div className="cards-container">
                 {data.map((logement) => (
                     <AccomodationCard

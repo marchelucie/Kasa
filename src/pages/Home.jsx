@@ -11,14 +11,14 @@ function Home() {
             <Layout>
                 <Banner />
                 <div className="cards-container">
-                    {data.map((logement) => (
-                        <AccomodationCard
-                            key={logement.id}
-                            id={logement.id}
-                            title={logement.title}
-                            cover={logement.cover}
-                        />
-                    ))}
+                        {data.map((logement) => (
+                            <AccomodationCard
+                                key={logement.id}
+                                id={logement.id}
+                                title={logement.title}
+                                cover={logement.cover}
+                            />
+                        ))}
                 </div>
             </Layout>
         </>

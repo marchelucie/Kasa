@@ -1,9 +1,9 @@
-import "../styles/banner.scss";
+import "../styles/Banner.scss";
 
-function Banner({title, bannerImage}) {
+function Banner({ title, bannerImage, pageName }) {
     return (
         <div className="banner">
-            <img src={bannerImage} alt="Bannière de la page d'accueil" className="banner__image" />
+            <img src={bannerImage} alt="Bannière" className={`banner-image-${pageName}`}/>
             <h2>{title}</h2>
         </div>
     )

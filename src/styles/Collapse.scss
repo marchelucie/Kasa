@@ -2,7 +2,6 @@
 
 .collapse {
     width: 1023px;
-    
     justify-self: center;
 
     .collapse-header {
@@ -12,7 +11,7 @@
         align-items: center;
         cursor: pointer;
         border-radius: 5px;
-        height: 52px;
+        height: 54px;
         padding : 0 20px;
 
         h2 {
@@ -20,5 +19,9 @@
             font-weight: 700;
             color: $title-color;
         }
+    }
+
+    .collapse-content{
+        background-color: #F6F6F673;
     }
 }

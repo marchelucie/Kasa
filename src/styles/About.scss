@@ -1,5 +1,11 @@
-.banner{
-    img{
-        opacity: 0.7;
-    }
+.banner-image-about{
+    opacity: 0.7;
+    
+}
+
+.about-container {
+    display : flex;
+    flex-direction: column;
+    gap : 30px;
+    justify-self: center;
 }

@@ -8,7 +8,7 @@ import '../styles/Home.scss';
 function Home() {
     return (
         <>
-            <Banner title={"Chez vous, partout et ailleurs"} bannerImage={BannerImage}/>
+            <Banner title={"Chez vous, partout et ailleurs"} bannerImage={BannerImage} pageName="home"/>
             <div className="cards-container">
                 {data.map((logement) => (
                     <AccomodationCard

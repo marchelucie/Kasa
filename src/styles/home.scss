@@ -1,5 +1,9 @@
 @import 'variables';
 
+.banner-image-home {
+    opacity: 0.4;
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 340px);

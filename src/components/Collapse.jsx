@@ -3,7 +3,7 @@ import ArrowOpen from "../assets/arrow-open.svg";
 import ArrowClosed from "../assets/arrow-closed.svg";
 import "../styles/Collapse.scss";
 
-function Collapse({ title, text }) {
+function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -18,14 +18,14 @@ function Collapse({ title, text }) {
             </div>
             {isOpen && (
                 <div className="collapse-content">
-                    {Array.isArray(text) ? (
+                    {Array.isArray(content) ? (
                         <ul>
-                            {text.map((item, index) => (
+                            {content.map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}
                         </ul>
                     ) : (
-                        <p>{text}</p>
+                        <p>{content}</p>
                     )}
                 </div>
             )}        </div>

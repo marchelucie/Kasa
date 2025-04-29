@@ -1,0 +1,28 @@
+@import 'variables';
+
+.error404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap : 150px;
+    
+    h1 {
+        font-size: 288px;
+        font-weight: 700;
+        color: $error-color;
+        margin: 0;
+    }
+
+    .error404_text {
+        font-size: 36px;
+        font-weight: 500;
+        color: $error-color;
+    }
+
+    .error404_return{
+        font-size: 18px;
+        font-weight: 500;
+        color: $text-color;
+    }
+}

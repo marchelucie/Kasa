@@ -19,17 +19,19 @@ function AccomodationDetails() {
     return (
         <>
             <Carousel images={logement.pictures} />
-            <div className="accomodation-details-header">
-                <AccomodationTitle title={logement.title} location={logement.location} />
-                <Host hostName={logement.host.name} hostPicture={logement.host.picture} />
-            </div>
-            <div className="accomodation-details-tags">
-                <Tags tags={logement.tags} />
-                <Rating rating={logement.rating} />
-            </div>
-            <div className="accomodation-details">
-                <Collapse title="Description" content={logement.description} />
-                <Collapse title="Equipements" content={logement.equipments} />
+            <div className="accomodation-details-container">
+                <div className="accomodation-details-header">
+                    <AccomodationTitle title={logement.title} location={logement.location} />
+                    <Host hostName={logement.host.name} hostPicture={logement.host.picture} />
+                </div>
+                <div className="accomodation-tags-rating">
+                    <Tags tags={logement.tags} />
+                    <Rating rating={logement.rating} />
+                </div>
+                <div className="accomodation-details">
+                    <Collapse title="Description" content={logement.description} />
+                    <Collapse title="Equipements" content={logement.equipments} />
+                </div>
             </div>
         </>
     )

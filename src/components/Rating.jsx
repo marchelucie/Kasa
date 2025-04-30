@@ -1,5 +1,6 @@
 import Star from '../assets/star-filled.svg';
 import EmptyStar from '../assets/star-empty.svg';
+import '../styles/Rating.scss';
 
 function Rating({ rating }) {
   const stars = Array.from({ length: 5 }, (_, index) => (

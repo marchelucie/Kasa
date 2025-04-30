@@ -5,23 +5,30 @@
     justify-self: center;
 
     .collapse-header {
-        background-color: $collapse-header-color;
+        background-color: $primary-color;
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
         border-radius: 5px;
         height: 54px;
-        padding : 0 20px;
+        padding: 0 20px;
 
         h2 {
             font-size: 24px;
             font-weight: 700;
-            color: $collapse-title-color;
+            color: white;
         }
     }
 
-    .collapse-content{
+    .collapse-content {
         background-color: #F6F6F673;
+        border-radius: 5px;
+        padding: 24px;
+        line-height: 143%;
+
+        li {
+            list-style-type: none;
+        }
     }
 }

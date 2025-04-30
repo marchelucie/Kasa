@@ -1,0 +1,14 @@
+@import 'variables';
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:196px;
+    height: 36px;
+    
+    .star{
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,3 +1,5 @@
+import '../styles/AccomodationTitle.scss';
+
 function AccomodationTitle({ title, location }) {
   return (
     <div className="accomodation-title">

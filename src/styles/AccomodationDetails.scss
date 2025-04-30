@@ -1,3 +1,26 @@
-.carousel{
+@import 'variables';
+
+.carousel {
     justify-self: center;
+}
+
+.accomodation-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .accomodation-details-header,
+    .accomodation-tags-rating,
+    .accomodation-details {
+        display: flex;
+        justify-self: center;
+        justify-content: space-between;
+        width: 1240px;
+    }
+
+    .accomodation-details {
+        gap: 76px;
+    }
 }

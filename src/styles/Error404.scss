@@ -1,35 +1,59 @@
 @import 'variables';
 
-.error404{
+.layout main {
     display: flex;
-    flex:1;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:60px;
+    flex: 1;
 
-    
-    h1 {
-        font-size: 288px;
-        font-weight: 700;
-        color: $primary-color;
-        margin: 0;
-        align-content: center;
-        line-height: 0.9;
+    .error404 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 288px;
+            font-weight: 700;
+            color: $primary-color;
+            margin: 0;
+            align-content: center;
+            line-height: 0.9;
+        }
+
+        .error404_text {
+            font-size: 36px;
+            font-weight: 500;
+            color: $primary-color;
+            margin: 0 20px;
+            line-height: 150%;
+        }
+
+        .error404_return {
+            font-size: 18px;
+            font-weight: 500;
+            color: $text-color;
+        }
     }
+}
 
-    .error404_text {
-        font-size: 36px;
-        font-weight: 500;
-        color: $primary-color;
-        margin: 0 20px;
-        line-height: 150%;
-    }
+@media screen and (max-width: 480px) {
+    .layout main {
+        .error404 {
+            h1 {
+                font-size: 96px;
+            }
 
-    .error404_return{
-        font-size: 18px;
-        font-weight: 500;
-        color: $text-color;
-        // margin:0;
+            .error404_text {
+                width: 260px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .error404_return {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
     }
 }

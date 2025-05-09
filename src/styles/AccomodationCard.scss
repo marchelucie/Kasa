@@ -40,3 +40,10 @@
         width: 60%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .accomodation-card {
+        width: 335px;
+        height: 255px;
+    }
+}

@@ -1,21 +1,37 @@
 @import 'variables';
 
-.accomodation-title{
+.accomodation-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 77px;
+    width: 100%;
 
-    h1{
+    h1 {
         color: $primary-color;
         font-weight: 500;
         font-size: 36px;
         margin: 0;
     }
-    p{
+
+    p {
         color: $secondary-color;
         font-weight: 500;
         font-size: 18px;
-        margin:0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .accomodation-title {
+        height: 73px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }

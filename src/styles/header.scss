@@ -2,6 +2,7 @@
 
 header {
     width: 1240px;
+    margin: 0 auto;
     height: 68px;
     display: flex;
     justify-self: center;
@@ -36,6 +37,30 @@ header {
                     &:hover {
                         text-decoration: underline;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 335px;
+        height: 47px;
+
+
+        img {
+            height: 47px;
+        }
+
+        nav {
+            .nav-list {
+                align-items: right;
+                gap: 26px;
+
+                .nav-item {
+                    font-size: 12px;
+                    text-transform: uppercase;
                 }
             }
         }

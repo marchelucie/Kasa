@@ -12,23 +12,88 @@
         cursor: pointer;
         border-radius: 5px;
         height: 54px;
-        padding: 0 20px;
+        padding: 0 5px;
 
         h2 {
             font-size: 24px;
             font-weight: 700;
             color: white;
         }
+
+        .collapse-arrow {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease-in-out;
+
+            &.rotate {
+                transform: rotate(-180deg);
+            }
+        }
     }
 
     .collapse-content {
         background-color: #F6F6F673;
         border-radius: 5px;
-        padding: 24px;
-        line-height: 143%;
+        padding: 0 24px;
+        max-height: 0;
+        overflow: hidden;
+        // line-height: 143%;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 
+        &.open {
+            max-height: 500px;
+        }
+
+        &.closed {
+            max-height: 0;
+            padding: 0 24px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        
+        ul{
+            padding:0;
+        }
         li {
             list-style-type: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .collapse {
+        width: 335px;
+
+        .collapse-header {
+            height: 30px;
+
+            h2 {
+                font-size: 13px;
+            }
+
+            .collapse-arrow {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        .collapse-content {
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            li {
+                font-size: 12px;
+                font-weight: 400;
+            }
         }
     }
 }

@@ -1,14 +1,26 @@
 @import 'variables';
 
-.rating{
+.rating {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:196px;
+    width: 196px;
     height: 36px;
-    
-    .star{
+
+    .star {
         width: 25px;
         height: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rating {
+        width: 98px;
+        height: 18px;
+
+        .star {
+            width: 13px;
+            height: 13px;
+        }
     }
 }

@@ -41,3 +41,32 @@
         color: white;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .carousel {
+        width: 335px;
+        height: 255px;
+
+        .carousel-image {
+            border-radius: 10px;
+        }
+
+        .carousel-button-next {
+            right: 10px;
+        }
+
+        .carousel-button-prev {
+            left: 10px;
+        }
+
+        .carousel-button-prev img,
+        .carousel-button-next img {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .images-index{
+            display: none;
+        }
+    }
+}

@@ -1,6 +1,5 @@
 import { useState } from "react";
-import ArrowOpen from "../assets/arrow-open.svg";
-import ArrowClosed from "../assets/arrow-closed.svg";
+import Arrow from "../assets/arrow-closed.svg";
 import "../styles/Collapse.scss";
 
 function Collapse({ title, content }) {
@@ -14,21 +13,20 @@ function Collapse({ title, content }) {
         <div className="collapse">
             <div className="collapse-header" onClick={toggleCollapse}>
                 <h2>{title}</h2>
-                <img src={isOpen ? ArrowOpen : ArrowClosed} />
+                <img src={Arrow} alt="toggle" className={`collapse-arrow ${isOpen ? 'rotate' : ''}`} />
             </div>
-            {isOpen && (
-                <div className="collapse-content">
-                    {Array.isArray(content) ? (
-                        <ul>
-                            {content.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <p>{content}</p>
-                    )}
-                </div>
-            )}        </div>
+            <div className={`collapse-content ${isOpen ? 'open' : 'closed'}`}>
+                {Array.isArray(content) ? (
+                    <ul>
+                        {content.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p>{content}</p>
+                )}
+            </div>
+        </div>
     );
 }
 

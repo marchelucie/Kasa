@@ -23,8 +23,6 @@ function AccomodationDetails() {
                 <div className="accomodation-details-header">
                     <AccomodationTitle title={logement.title} location={logement.location} />
                     <Host hostName={logement.host.name} hostPicture={logement.host.picture} />
-                </div>
-                <div className="accomodation-tags-rating">
                     <Tags tags={logement.tags} />
                     <Rating rating={logement.rating} />
                 </div>

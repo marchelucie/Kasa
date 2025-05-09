@@ -4,7 +4,7 @@ import '../styles/Rating.scss';
 
 function Rating({ rating }) {
   const stars = Array.from({ length: 5 }, (_, index) => (
-    index < rating ? <img src={Star}></img> : <img src={EmptyStar}></img>
+    index < rating ? <img className="star" key={index} src={Star}></img> : <img className="star" key={index} src={EmptyStar}></img>
   ));
 
   return <div className="rating">{stars}</div>;

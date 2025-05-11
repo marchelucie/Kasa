@@ -34,7 +34,7 @@ header {
                     text-decoration: none;
                     color: black;
 
-                    &:hover {
+                    &:hover, &.active {
                         text-decoration: underline;
                     }
                 }
